@@ -5,7 +5,7 @@ version: '3'
 
 services:
   sportbukkit:
-    build: server/
+    build: sportbukkit/
     image: ewized/sportbukkit
   pgm:
     build: pgm/
