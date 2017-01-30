@@ -1,0 +1,14 @@
+---
+# Create a PGM Game Server environment with Docker
+
+version: '3'
+
+services:
+  sportbukkit:
+    build: server/
+    image: ewized/sportbukkit
+  pgm:
+    build: pgm/
+    image: ewized/pgm
+    depends_on:
+      - sportbukkit
