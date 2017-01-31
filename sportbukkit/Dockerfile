@@ -26,8 +26,6 @@ RUN git clone "$SPORTBUKKIT_URL" \
 
 WORKDIR /minecraft
 
-VOLUME ["/minecraft"]
-
 EXPOSE 25565
 
 CMD ["java", "-Xmx1G", "-jar", "sportbukkit.jar"]
