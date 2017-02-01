@@ -5,10 +5,15 @@ version: '3'
 
 services:
   sportbukkit:
+    container_name: "sportbukkit"
     build: sportbukkit/
     image: ewized/sportbukkit
   pgm:
+    container_name: "pgm"
     build: pgm/
     image: ewized/pgm
+    restart: always
+    ports:
+      - 25565:25565
     depends_on:
       - sportbukkit

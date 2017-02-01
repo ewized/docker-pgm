@@ -31,7 +31,7 @@ autorestart:
   memory-limit: -1
 start:
   auto: true
-  countdown: 30s
+  countdown: 15s
   huddle: 0s
 cycle:
   countdown: 15s
@@ -41,7 +41,7 @@ cycle:
     countdown: 5s
   match-end:
     enabled: true
-    countdown: 30s
+    countdown: 15s
 join:
   priority-kick: true
   mid-match: true
